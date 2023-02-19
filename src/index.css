@@ -2,22 +2,40 @@ body {
   background-color: #22254b;
 }
 
-/* 
-  display: flex만 주면 모든 콘텐츠가 가로로 배치된다.
-  크기에 맞게 가로 배치를 시켜주고 싶다면
-  flex-wrap 속성의 디폴트 값인 nowrap을 wrap으로 변경해줘야 한다.
-*/
 .app-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+/* 컨테이너 CSS 완성 */
 .movie-container {
   width: 250px;
-  border: 1px solid red;
+  margin: 16px;
+  background-color: #373b69;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .movie-container img {
   max-width: 100%;
+}
+
+/* 타이틀, 평점 CSS 완성 */
+.movie-info {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.movie-info h4 {
+  margin: 0;
+}
+
+.movie-info span {
+  /* span도 margin은 left, right이 가능하구나 */
+  margin-left: 3px;
 }
