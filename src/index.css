@@ -1,9 +1,21 @@
+body {
+  background-color: #22254b;
+}
+
 /* 
-  이미지의 크기를 줄이기 위해 전체 컨테이너의 크기를 정하고
-  img의 크기를 max-width: 100%로 지정함
- */
+  display: flex만 주면 모든 콘텐츠가 가로로 배치된다.
+  크기에 맞게 가로 배치를 시켜주고 싶다면
+  flex-wrap 속성의 디폴트 값인 nowrap을 wrap으로 변경해줘야 한다.
+*/
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .movie-container {
   width: 250px;
+  border: 1px solid red;
 }
 
 .movie-container img {
