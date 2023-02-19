@@ -13,8 +13,8 @@ function Movie({title, poster_path, vote_average }){
       {/* 이미지 경로 + props */}
       <img src={IMG_BASE_URL + poster_path} alt="영화포스터"/>
       <div className="movie-info">
-        <h4>제목</h4>
-        <span>평점</span>
+        <h4>{title}</h4>
+        <span>{vote_average}</span>
       </div>
     </div>
   )
