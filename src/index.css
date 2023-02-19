@@ -37,5 +37,5 @@ body {
 
 .movie-info span {
   /* span도 margin은 left, right이 가능하구나 */
-  margin-left: 3px;
+  margin-left: 10px;
 }
