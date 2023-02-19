@@ -7,7 +7,14 @@ function App() {
       <div className="app-container">
         {/* dummy 파일에 접근해 리스트 렌더링하기 */}
         {dummy.results.map((item) => {
-          return <Movie></Movie>;
+          // props 전달하기
+          return (
+            <Movie
+              title={item.title}
+              poster_path={item.poster_path}
+              vote_average={item.vote_average}
+            />
+          );
         })}
       </div>
     </div>
